@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bathula Venkatesh - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Bathula Venkatesh — Full Stack Developer skilled in React, Java, Spring Boot, MySQL, and modern web technologies." />
+  <style>
+    .skill-bar {
+      height: 8px;
+      background-color: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 8px;
+      background-color: #7e22ce;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .contact-animate {
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { color: #a78bfa; }
+      to { color: #ffffff; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+  <!-- NAVBAR -->
+  <header class="bg-purple-700 text-white shadow-md sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold">Bathula Venkatesh</a>
+      <nav class="space-x-4 font-medium">
+        <a href="#home" class="hover:text-purple-200">Home</a>
+        <a href="#about" class="hover:text-purple-200">About</a>
+        <a href="#projects" class="hover:text-purple-200">Projects</a>
+        <a href="#contact" class="hover:text-purple-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-purple-700">Bathula Venkatesh</span></h1>
+      <p class="mb-6 text-lg">Full Stack Developer specializing in building modern, scalable web applications with React, Java, Spring Boot, and MySQL. Passionate about delivering clean UI, robust backend logic, and optimized performance.</p>
+      <div class="space-x-3">
+        <a href="#projects" class="inline-block bg-purple-700 text-white px-5 py-3 rounded-lg shadow hover:bg-purple-800 transition">See Projects</a>
+        <a href="#contact" class="inline-block border border-purple-700 text-purple-700 px-5 py-3 rounded-lg hover:bg-purple-50 transition">Contact Me</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <img src="./ImagesFolder/Venky.jpg" alt="Bathula Venkatesh" class="w-64 h-64 rounded-2xl object-cover shadow-lg border-4 border-white">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="mb-6">I am a certified Full Stack Developer with hands-on experience in building and deploying responsive, dynamic web applications. My expertise spans frontend and backend technologies, with a focus on performance, scalability, and clean code.</p>
+
+    <!-- Skills -->
+    <div class="space-y-4">
+      <div>
+        <p>Core Java - 90%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      </div>
+      <div>
+        <p>Advanced Java - 85%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+      <div>
+        <p>Servlets & JSP - 80%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      </div>
+      <div>
+        <p>MySQL - 85%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+      <div>
+        <p>HTML / CSS / Bootstrap - 90%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      </div>
+      <div>
+        <p>JavaScript - 85%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+      <div>
+        <p>ReactJS - 80%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      </div>
+      <div>
+        <p>Tailwind CSS - 75%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+      </div>
+      <div>
+        <p>Spring Boot / Spring Core - 85%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+      <div>
+        <p>Microservices - 80%</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Google Drive Based File Project</h3>
+        <p class="text-gray-600 mb-4">Cloud-based file storage with secure file upload, download, delete, and folder creation using React, Spring Boot, and MySQL.</p>
+        <a href="https://github.com/BATHULAVENKATESH/google-drive-based-file-project" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Hospital Management System</h3>
+        <p class="text-gray-600 mb-4">Java and MySQL-based hospital management solution with CRUD operations, authentication, and role-based access control.</p>
+        <a href="https://github.com/BATHULAVENKATESH/Hospital_Management_ProjectRepo" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+        <p class="text-gray-600 mb-4">Responsive React app fetching and displaying real-time weather data with a clean and user-friendly UI.</p>
+        <a href="https://github.com/BATHULAVENKATESH/weather-app" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Razor Payment Integration</h3>
+        <p class="text-gray-600 mb-4">Secure payment gateway integration using Razorpay API for seamless online transactions.</p>
+        <a href="https://github.com/BATHULAVENKATESH/razorpayment_Integration" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Calculator App (React)</h3>
+        <p class="text-gray-600 mb-4">A simple, responsive calculator built with React and CSS for fast mathematical operations.</p>
+        <a href="https://github.com/BATHULAVENKATESH/calculator_app_react" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6 border border-gray-200 project-card transition-transform">
+        <h3 class="text-xl font-semibold mb-2">Counter App</h3>
+        <p class="text-gray-600 mb-4">Basic counter app built with JavaScript to demonstrate state handling and DOM updates.</p>
+        <a href="https://github.com/BATHULAVENKATESH/counter-app" class="text-purple-700 hover:underline">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-purple-700 text-white py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <p class="contact-animate text-lg">📞 9110539450</p>
+      <p class="contact-animate text-lg">📧 venkateshbathulaa2001@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-purple-900 text-gray-300 text-center py-4">
+    &copy; 2025 Bathula Venkatesh | <a href="https://www.linkedin.com/in/venkateshbathula/" class="underline hover:text-white">LinkedIn</a> • <a href="https://github.com/BATHULAVENKATESH" class="underline hover:text-white">GitHub</a>
+  </footer>
+
+  <script>
+    // Animate skill bars when in view
+    const skillBars = document.querySelectorAll('.skill-fill');
+    window.addEventListener('scroll', () => {
+      skillBars.forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          bar.style.width = bar.getAttribute('data-width');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
